@@ -6,42 +6,49 @@
 #F17065
 */
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 16px;
     font-family: 'Tahoma';
 }
-section{
+
+section {
     padding: 0 10%;
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     background-color: #312D45;
-    z-index: 1;
+    z-index: 1000;
 }
-.header_container{
+
+.header_container {
     display: flex;
     padding: 0 10%;
     justify-items: center;
     align-items: center;
     justify-content: space-between;
 }
-.header_container .logo{
+
+.header_container .logo {
     width: 50px;
     height: 50px;
 }
-header .header_container navigation{
+
+header .header_container navigation {
     margin: 0 20px;
 }
-header .header_container navigation ul li{
+
+header .header_container navigation ul li {
     display: inline-flex;
 }
-header .header_container navigation ul li a{
+
+header .header_container navigation ul li a {
     font-size: 1.2rem;
     text-transform: uppercase;
     color: white;
@@ -51,27 +58,31 @@ header .header_container navigation ul li a{
     cursor: pointer;
     transition: .2s linear;
 }
-header .header_container navigation ul li a:hover{
+
+header .header_container navigation ul li a:hover {
     background-color: #B33A36;
 }
-header .header_container .logo_h1{
+
+header .header_container .logo_h1 {
     display: flex;
     align-items: center;
 }
-header .header_container .logo_h1 h1{
+
+header .header_container .logo_h1 h1 {
     padding: 0 10px;
     color: white;
     font-weight: 500;
     font-family: 'Verdana';
 }
-header .header_container .logo_h1 h1 span{
+
+header .header_container .logo_h1 h1 span {
     font-weight: 700;
     color: #F17065;
     font-size: 2.2rem;
 }
 
 
-main{
+main {
     height: 97vh;
     position: relative;
     display: flex;
@@ -79,31 +90,37 @@ main{
     justify-content: center;
     padding: 3% 10%;
 }
-main .home{
+
+main .home {
     display: flex;
     align-items: center;
     justify-content: space-around
 }
-main .home img{
+
+main .home img {
     box-shadow: 10px -10px #F17065;
     width: 40%;
     border-radius: 5px;
 }
-main .home_box{
+
+main .home_box {
     max-width: 600px;
 }
-main .home_box h1{
+
+main .home_box h1 {
     font-size: 4.3rem;
     text-transform: uppercase;
     padding-bottom: 40px;
     color: #F17065;
 }
-main .home_box p{
+
+main .home_box p {
     font-size: 1.3rem;
     padding-bottom: 50px;
-        font-family:monospace;
+    font-family: monospace;
 }
-.btn{
+
+.btn {
     display: block;
     width: 30%;
     text-align: center;
@@ -117,14 +134,15 @@ main .home_box p{
     border-radius: 5px;
     transition: .2s linear;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #F17065;
     color: white;
 }
 
 
 
-.about{
+.about {
     padding: 0 10%;
     padding-bottom: 7%;
     display: flex;
@@ -132,82 +150,96 @@ main .home_box p{
     justify-content: space-around;
     align-items: center;
 }
-.about .about_img_box{
+
+.about .about_img_box {
     position: relative;
     display: flex;
     padding-right: 7%;
 }
-.about .about_img_box .about_img{
+
+.about .about_img_box .about_img {
     width: 500px;
     height: auto;
-        box-shadow: -10px -10px #F17065;
+    box-shadow: -10px -10px #F17065;
     border-radius: 5px;
 }
-.about_text_box{
+
+.about_text_box {
     width: 700px;
 }
-.about_text_box h1{
+
+.about_text_box h1 {
     font-size: 4rem;
     padding-bottom: 30px;
     color: #F17065;
 }
-.about_text_box p{
+
+.about_text_box p {
     font-size: 1.3rem;
-    font-family:monospace;
+    font-family: monospace;
 }
 
-.stats{
+.stats {
     background-color: #494554;
 }
-.stats_box{
+
+.stats_box {
     display: flex;
 }
-.stat_1{
+
+.stat_1 {
     flex: 1 1 0;
     border-right: 1px solid #AEA9BA;
     padding: 2% 0;
     text-align: center;
     align-content: center;
 }
-.stat_1 h1{
+
+.stat_1 h1 {
     font-size: 3rem;
     font-weight: 700;
     color: #F17065;
 }
-.stat_1 p{
+
+.stat_1 p {
     font-size: 1.2rem;
     font-weight: 500;
     color: #AEA9BA;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family:monospace;
+    font-family: monospace;
 }
-.stat_1:nth-child(4){
+
+.stat_1:nth-child(4) {
     border-right: none;
 }
 
-.services{
+.services {
     padding: 5% 7%;
 }
-.services .container_services h1{
+
+.services .container_services h1 {
     font-size: 4rem;
     padding-bottom: 50px;
     color: #F17065;
     text-align: center;
 }
-.services .services_box{
+
+.services .services_box {
     display: flex;
     text-align: center;
     height: auto;
     justify-content: center;
     margin: 0 auto;
 }
-.services .services_box .service_1{
+
+.services .services_box .service_1 {
     margin: 10px 15px;
     padding: 20px 10px;
     width: 320px;
 }
-.services .services_box .service_1 h2{
+
+.services .services_box .service_1 h2 {
     font-size: 1.1rem;
     font-weight: 600;
     font-family: 'Verdana';
@@ -215,48 +247,56 @@ main .home_box p{
     padding-bottom: 15px;
     text-transform: uppercase;
 }
-.services .services_box .service_1 p{
-    font-family:monospace;
+
+.services .services_box .service_1 p {
+    font-family: monospace;
     line-height: 1.2rem;
 }
-.services .services_box .service_1 img{
+
+.services .services_box .service_1 img {
     width: 80px;
     padding-bottom: 25px;
 }
 
-.benefits{
+.benefits {
     background-color: #F17065;
     padding: 5% 7%;
 }
-.benefits h1{
+
+.benefits h1 {
     padding-bottom: 50px;
     font-size: 4rem;
     text-align: center;
     color: white;
 }
-.benefits .benefits_box{
+
+.benefits .benefits_box {
     display: flex;
     flex-wrap: wrap;
     height: auto;
     justify-content: center;
     margin: 0 auto;
 }
-.benefits .benefits_box .benefit1{
+
+.benefits .benefits_box .benefit1 {
     margin: 10px 10px;
     padding: 30px 25px;
     width: 320px;
     background-color: white;
     border-radius: 7px;
 }
-.benefits .benefits_box .benefit1 img{
+
+.benefits .benefits_box .benefit1 img {
     width: 80px;
     height: auto;
     padding-bottom: 20px;
 }
-.benefits .benefits_box .benefit1 p{
+
+.benefits .benefits_box .benefit1 p {
     font-size: 1rem;
     font-family: monospace;
 }
+
 .blog {
     padding: 5% 0;
     padding-bottom: 7%;
@@ -328,72 +368,89 @@ main .home_box p{
     align-items: center;
     flex: 0 0 auto;
 }
-.blog .blog_box .blog_1 img{
+
+.blog .blog_box .blog_1 img {
     border-radius: 7px;
     width: 200px;
     height: 200px;
     border: .5px solid grey;
 }
-.blog .blog_box .blog_1 .text{
+
+.blog .blog_box .blog_1 .text {
     padding-left: 20px;
+    width: 200px;
 }
-.blog .blog_box .blog_1 .text h3{
+
+.blog .blog_box .blog_1 .text h3 {
     color: white;
-    font-size: 1.5rem;
-    padding-bottom: 20px;
+    font-size: 1.4rem;
+    padding-bottom: 25px;
 }
-.blog .blog_box .blog_1 .text p{
+
+.blog .blog_box .blog_1 .text p {
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: monospace;
 }
-footer{
+
+footer {
     background-color: #312D45;
     padding-top: 2%;
 }
-.footer_box{
+
+.footer_box {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     padding-bottom: 30px;
 }
-footer .socials a, .footer_services a{
+
+footer .socials a,
+.footer_services a {
     text-decoration: none;
     color: white;
     margin: 5px 9px;
 }
-footer .socials a{
+
+footer .socials a {
     font-size: 1.5rem;
     height: auto;
     transition: .1s linear;
 }
-footer .socials a:hover{
+
+footer .socials a:hover {
     color: #F17065;
 }
-.footer_box .footer_services{
+
+.footer_box .footer_services {
     list-style: none;
 }
-.footer_box .footer_services li{
+
+.footer_box .footer_services li {
     padding: 5px 0;
     text-transform: uppercase;
     font-family: monospace;
     transition: .2s linear;
 }
-.footer_box .footer_services li a:hover{
+
+.footer_box .footer_services li a:hover {
     color: #F17065;
 }
-.footer_box .contacts{
+
+.footer_box .contacts {
     display: flex;
     flex-direction: column;
     color: white;
 }
-.footer_box .contacts a{
+
+.footer_box .contacts a {
     text-decoration: none;
     color: white;
     margin: 5px 0px;
     font-family: monospace;
 }
-.footer_box .contacts .adress{
+
+.footer_box .contacts .adress {
     font-weight: 100;
     font-family: monospace;
     font-size: .9rem;
@@ -407,7 +464,7 @@ footer .socials a:hover{
 
 
 
-footer .underline{
+footer .underline {
     user-select: none;
     border-top: 1px solid #F17065;
     width: 70%;
@@ -416,28 +473,9 @@ footer .underline{
     padding-top: 30px;
     padding-bottom: 30px;
 }
-footer .underline p{
+
+footer .underline p {
     color: white;
     font-weight: 100;
     font-family: monospace;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
