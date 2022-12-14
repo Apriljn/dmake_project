@@ -14,6 +14,7 @@
 html {
     font-size: 16px;
     font-family: 'Tahoma';
+    scroll-behavior: smooth;
 }
 
 section {
@@ -298,7 +299,7 @@ main .home_box p {
 }
 
 .blog {
-    padding: 5% 0;
+    padding: 5% 5%;
     padding-bottom: 7%;
     position: relative;
     overflow: hidden;
@@ -350,6 +351,7 @@ main .home_box p {
     overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: flex-start;
+    padding: 0 10px;
 }
 .blog .blog_box::-webkit-scrollbar{
     display: none;
@@ -361,7 +363,7 @@ main .home_box p {
 .blog .blog_box .blog_1 {
     margin: 10px 20px;
     padding: 30px 25px;
-    width: 500px;
+    width: 450px;
     background-color: #494554;
     border-radius: 7px;
     display: flex;
