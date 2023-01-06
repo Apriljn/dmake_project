@@ -95,7 +95,7 @@ main {
 main .home {
     display: flex;
     align-items: center;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 main .home img {
@@ -147,26 +147,18 @@ main .home_box p {
     padding: 0 10%;
     padding-bottom: 7%;
     display: flex;
-    position: relative;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.about .about_img_box {
-    position: relative;
-    display: flex;
-    padding-right: 7%;
-}
-
-.about .about_img_box .about_img {
-    width: 500px;
-    height: auto;
-    box-shadow: -10px -10px #F17065;
+.about img {
+    box-shadow: 10px -10px #F17065;
+    width: 40%;
     border-radius: 5px;
 }
 
 .about_text_box {
-    width: 700px;
+    max-width: 600px;
 }
 
 .about_text_box h1 {
@@ -381,18 +373,26 @@ main .home_box p {
 .blog .blog_box .blog_1 .text {
     padding-left: 20px;
     width: 200px;
+    text-decoration: none;
 }
 
 .blog .blog_box .blog_1 .text h3 {
     color: white;
     font-size: 1.4rem;
     padding-bottom: 25px;
+    transition: .2s linear;
 }
 
 .blog .blog_box .blog_1 .text p {
     color: white;
     font-size: 1rem;
     font-family: monospace;
+    font-weight: 100;
+    opacity: .7;
+}
+
+.blog .blog_box .blog_1 .text h3:hover{
+    color: #F17065;
 }
 
 footer {
@@ -458,14 +458,6 @@ footer .socials a:hover {
     font-size: .9rem;
     padding-top: 5px;
 }
-
-
-
-
-
-
-
-
 footer .underline {
     user-select: none;
     border-top: 1px solid #F17065;
@@ -480,4 +472,116 @@ footer .underline p {
     color: white;
     font-weight: 100;
     font-family: monospace;
+}
+
+
+
+@media (max-width: 1000px) {
+    .header_container .logo_h1 img{
+        width: 40px;
+        height: auto;
+    }
+    header .header_container .logo_h1 h1 {
+       font-size: 1.5rem;
+    }
+    
+    header .header_container .logo_h1 h1 span {
+        font-weight: 700;
+        color: #F17065;
+        font-size: 2rem;
+    }
+    header .header_container navigation ul li a {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        padding: 25px 15px;
+    }
+    .home, .about{
+        flex-flow: column-reverse;
+    }
+    .home img,.about img{
+        margin-left: 20px;
+        margin-bottom: 4rem;
+        margin-top: 5rem;
+        width: 60%;
+    }
+    .home .home_box h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .home .home_box p{
+        font-size: 1.2rem;
+    }
+    .home .home_box a{
+        padding: 10px 15px;
+        font-size: .9rem;
+    }
+    .about_text_box h1{
+        font-size: 3rem;
+        padding-top: 3rem;
+        text-align: center;
+    }
+    .about{
+        padding: 0 10%;
+    }
+    .stat_1 h1 {
+        font-size: 1.5rem;
+    }
+    .stat_1 p {
+        font-size: 1rem;
+    }
+    .services .container_services h1{
+        font-size: 3rem;
+    }
+    .services .container_services .services_box{
+        padding-bottom: 2rem;
+    }
+    .services .container_services .services_box .service_1{
+        padding: 0;
+    }
+    .services .container_services .services_box .service_1 img{
+        width: 60px;
+    }
+    .services .container_services .services_box .service_1 h2{
+        font-size: 1rem;
+    }
+    .services .container_services .services_box .service_1 p{
+        font-size: .9rem;
+    }
+    .benefits h1, .blog h1{
+        font-size: 3rem;
+    }
+    .footer_box{
+        font-size: .7em;
+    }
+    .footer_box .contacts .adress p{
+        font-size: .7em;
+    }
+    .footer_box .socials i{
+        font-size: .7em;
+    }
+    .underline p{
+        font-size: .7em;
+    }
+}
+@media (max-width: 750px){
+    header .header_container .logo_h1{
+        padding: 1rem 0;
+    }
+    header .header_container navigation{
+        display: none;
+    }
+    .services .container_services .services_box{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .stats .stats_box .stat_1{
+        padding: 1rem 0;
+    }
+    .stat_1 h1 {
+        font-size: 1.2rem;
+    }
+    .stat_1 p {
+        font-size: .7rem;
+    }
 }
